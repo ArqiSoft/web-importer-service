@@ -1,9 +1,9 @@
 version: '3'
 
 services:
-    chemical-export-service:
-        container_name: chemical-export-service
-        image: docker.your-company.com/sds/chemical-export-service:latest
+    web-importer:
+        container_name: web-importer
+        image: leanda/web-importer:latest
         environment:
         - TZ=EST
         - OSDR_LOG_FOLDER=/logs
